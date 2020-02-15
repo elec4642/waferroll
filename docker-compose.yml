@@ -2,7 +2,8 @@ version: '3'
 
 services:
   web:
-    image: waferroll
+    container_name : waferroll
+    image: allentpg/waferroll
     #build: .
     command: python manage.py runserver 0.0.0.0:8000
     #volumes:
