@@ -19,7 +19,7 @@ docker-deploy:
     - docker-compose up -d
   tags:
     # 执行Job的服务器
-    - macrunner
+    - waferroll
   only:
     # 只有在master分支才会执行
     - master
@@ -35,5 +35,5 @@ test:
         - docker push allentpg/waferroll
         - docker run --name test allentpg/waferroll /bin/bash -c "python3 manage.py test"
     tags:
-        - macrunner
+        - waferroll
 
