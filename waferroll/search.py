@@ -1,12 +1,12 @@
 # -*- coding: utf-8 -*-
 
 from django.http import HttpResponse
-from django.shortcuts import render_to_response
+from django.shortcuts import render
 
 
 # 表单
 def search_form(request):
-    return render_to_response('search_form.html')
+    return render(request, 'search_form.html')
 
 
 # 接收请求数据
