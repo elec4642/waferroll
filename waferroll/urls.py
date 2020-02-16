@@ -20,4 +20,6 @@ from django.urls import path
 urlpatterns = [
     path('hello/', view.hello),
     path('testdb/', testdb.testdb),
+    path('search_form/', search.search_form),
+    path('search/', search.search),
 ]

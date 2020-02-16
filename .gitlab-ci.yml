@@ -36,4 +36,6 @@ test:
         - docker run --name test allentpg/waferroll /bin/bash -c "python3 manage.py test"
     tags:
         - waferroll
-
+    only:
+        # 只有在master分支才会执行
+        - master
