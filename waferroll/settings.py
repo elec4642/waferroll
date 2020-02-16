@@ -82,7 +82,7 @@ DATABASES = {
         'USER': 'allen',
         'PASSWORD': 'tpg12345',
         'PORT': 3306,
-        'HOST': '192.168.1.108',
+        'HOST': '10.224.18.182',
     }
 }
 
