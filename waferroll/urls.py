@@ -29,5 +29,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     #url(r'^datetime$/', current_datetime.current_datetime),
     path('datetime/', current_datetime.current_datetime),
-    #url(r'^time/plus/(\d{1,2})/$', hour_ahead.hours_ahead),
+    url(r'^time/plus/(\d{1,2})/$', hour_ahead.hours_ahead),
 ]
