@@ -14,7 +14,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from . import view, testdb, search, search2, current_datetime, hour_ahead
+from . import view, testdb, search, search2, current_datetime, hour_ahead, milk_price
 from django.conf.urls import url
 from django.urls import path
 from django.contrib import admin
@@ -30,4 +30,5 @@ urlpatterns = [
     #url(r'^datetime$/', current_datetime.current_datetime),
     path('datetime/', current_datetime.current_datetime),
     url(r'^time/plus/(\d{1,2})/$', hour_ahead.hours_ahead),
+    url(r'^milk_price/', milk_price.price),
 ]

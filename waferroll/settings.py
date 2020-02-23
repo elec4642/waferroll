@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'TestModel',
+    'milk_price',
 ]
 
 MIDDLEWARE = [
@@ -82,7 +83,7 @@ DATABASES = {
         'USER': 'allen',
         'PASSWORD': 'tpg12345',
         'PORT': 3306,
-        'HOST': '10.224.18.182',
+        'HOST': '10.1.1.191',
     }
 }
 
