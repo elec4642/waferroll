@@ -38,8 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'TestModel',
-    'milk_price',
+    'product',
 ]
 
 MIDDLEWARE = [
@@ -83,7 +82,8 @@ DATABASES = {
         'USER': 'allen',
         'PASSWORD': 'tpg12345',
         'PORT': 3306,
-        'HOST': '10.1.1.191',
+        'HOST': '10.224.18.182',
+        # 'HOST': '10.1.1.191',
     }
 }
 
@@ -126,3 +126,6 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, "static"),
+]
