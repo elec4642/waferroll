@@ -3,6 +3,10 @@ from product.models import milk
 from django.shortcuts import render
 
 
+def overview(request):
+    return render (request, 'base.html')
+
+
 #数据库操作
 def milk_price(request):
 

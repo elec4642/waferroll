@@ -21,5 +21,6 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    path('overview/', views.overview, name='overview'),
     path('milk/', views.milk_price, name='milk'),
 ]
